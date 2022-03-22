@@ -1,0 +1,481 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url('../image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.navbar{
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+}
+.logo{
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.navmenu{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    position: absolute;
+    right: 70px;
+    top: 30px;
+}
+.value{
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+ 
+.value:hover{
+    border-bottom: 1px solid white;
+}
+.value:active{color: rgb(204, 164, 116);}
+ 
+.name{
+    color: white;
+    margin-top: 30vh;
+    margin-left: 20vh;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+.description{
+    color: white;
+    margin-left: 20vh;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+.clipart{
+    background-image: url('../image/vector.png');
+    height: 360px;
+    width: 510px;
+    position: absolute;
+    top: 25vh;
+    right: 20vh;
+}
+.started{
+    height: 45px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: rgb(230, 87, 110);
+    color: white;
+    border: none;
+    margin-left: 20vh;
+    margin-top: 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.started:active{
+    border-bottom: 1px solid white;
+    box-shadow: 0px 2px 30px rgb(230, 87, 110);
+}
+.rmenu{visibility: hidden;}
+.menu{visibility: hidden;}
+.hiw{height: 95vh; width: 100%;overflow-x: hidden;}
+.block{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0px 5px 10px 0px rgb(92, 84, 84);
+    margin:auto;
+    padding-left: 10px;
+}
+.block:hover{box-shadow: 0px 5px 20px 0px rgb(92, 84, 84);}
+.bcont{
+    display: inline-flex;
+    width: 100%;
+    overflow-y: hidden;
+}
+.card{
+    margin-left: 10vh;
+    background-color: transparent;
+    width: 90vh;
+    margin-top: 100px;
+}
+.htitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: rgb(156, 20, 40);
+   
+}
+.val1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 19px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: rgb(65, 29, 23);
+}
+.desc{
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 70%;
+    line-height: 25px;
+    color: rgb(65, 29, 23);
+}
+.card1 {
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+  }
+ 
+  .card__side {
+    height: 52rem;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+ 
+  .card__side--front {
+    background-color: #fff;
+  }
+ 
+  .card__side--front-1 {
+    background: linear-gradient(-45deg, #fcafb9, #64b5f6);
+  }
+ 
+  .card__side--front-2 {
+    background: linear-gradient(-45deg, #fcafb9, #64b5f6);
+  }
+ 
+  .card__side--front-3 {
+    background: linear-gradient(-45deg, #fcafb9, #64b5f6);
+  }
+ 
+  .card__side--back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+ 
+  .card__side--back-1 {
+    background: linear-gradient(-45deg, #64b5f6, #fcafb9);
+  }
+ 
+  .card__side--back-2 {
+    background: linear-gradient(-45deg, #64b5f6, #fcafb9);
+  }
+ 
+  .card__side--back-3 {
+    background: linear-gradient(-45deg, #64b5f6, #fcafb9);
+  }
+ 
+  .card:hover .card__side--front-1,
+  .card:hover .card__side--front-2,
+  .card:hover .card__side--front-3 {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+ 
+  .card:hover .card__side--back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+ 
+  .card__title {
+    height: 20rem;
+    padding: 4rem 2rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+ 
+  .card__title--1 .fas {
+    font-size: 5rem;
+  }
+ 
+  .card__title--2 .fas {
+    font-size: 5rem;
+  }
+ 
+  .card__title--3 .fas {
+    font-size: 5rem;
+  }
+ 
+  .card__heading {
+    font-size: 3rem;
+    font-weight: bold;
+   
+    text-align: center;
+    color: #fff;
+    width: 75%;
+  }
+ 
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+ 
+  .card__details {
+    padding: 0 2rem 2rem;
+    font-size: 1.5rem;
+  }
+ 
+  .card__details ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+ 
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+ 
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem;
+  }
+ 
+  .card__price-only {
+    padding: 0 2rem 2rem;
+    font-size: 2rem;
+  }
+ 
+  .card__price-value {
+    padding: 0 2rem 2rem;
+    font-size: 2rem;
+  }
+@media screen and (max-width: 1316px) {.clipart{display: none;}}
+@media screen and (max-width: 1025px) {
+   
+   /* .description{
+        margin-left: 40vh;
+    }
+    .name{margin-left: 40vh;}
+    .started{margin-left: 40vh;}*/
+}
+@media screen and (max-width: 932px) {
+    /*.description{margin-left: 30vh;}
+    .name{margin-left: 30vh;}
+    .started{margin-left: 30vh;}*/
+    .card{margin-left: 5vh;}
+}
+@media screen and (max-width: 818px) {
+   /* .description{margin-left: 20vh;}
+    .name{margin-left: 20vh;}
+    .started{margin-left: 20vh;}*/
+    .description{margin-left: 10vh;}
+    .name{margin-left: 10vh;}
+    .started{margin-left: 10vh;}
+    .bcont{display: flex; flex-direction: column;}
+    .card{width: 100%; margin-left: 0;}
+    .desc{margin: auto;}
+    .hiw{height: 100%; width: 100%}
+}
+@media screen and (max-width: 619px) {
+    .navmenu{
+        display: none;
+    }
+    .description{margin-left: 10vh;}
+    .name{margin-left: 10vh;}
+    .started{margin-left: 10vh;}
+    .card{width: 100%; margin-left: 0;}
+    .val1{margin-left: 0;}
+    .block{margin:auto;}
+    .hiw{height: 100%; width: 100%}
+    .menu{
+        visibility: inherit;
+        height: 20px;
+        width: 40px;
+        background-color: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #line1{
+        height: 2px;
+        width: 90%;
+        background-color: black;
+        margin: 2px 2px 5px 2px;
+    }
+    #line2{
+        height: 2px;
+        width: 90%;
+        background-color: black;
+        margin: 2px 2px 5px 2px;
+    }
+    #line3{
+        height: 2px;
+        width: 90%;
+        background-color: black;
+        margin: 2px 2px 5px 2px;
+    }
+    #menubox{
+        position: absolute;
+        z-index: 0;
+        height: 100vh;
+        width: 40vh;
+        background-color: rgba(238, 130, 238, 0.932);
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    .menudata{
+        margin-top: 10vh;
+        height: 90vh;
+        width: 100vh;
+        background-color: transparent;
+    }
+    .rmenu{
+        visibility: inherit;
+        list-style: none;
+        padding-top: 40px;
+    }
+    .value{
+        margin-top: 40px;
+        font-size: 23px;
+        font-weight: 300;
+        margin-left: 80px;
+        width: 20%;
+    }
+    .value:hover{border: none;}
+   
+}
+.navbar{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: #162252;
+}
+ 
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #faebeb; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+ 
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #162252;
+  display: block;
+  transition: 0.3s;
+}
+ 
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #6666FF;
+}
+ 
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+ 
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #faebeb;
+  color:#162252;
+  padding: 10px 20px;
+  border-radius: 100%;
+  border-color:  #AAAAFF;
+}
+ 
+.openbtn:hover {
+  background-color: #E6E6FA;
+}
+ 
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+ 
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+ 
+.logo{
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+}
+ 
+.links{
+  float:left;
+  padding:35px 0 0px 500px;
+}
+ 
+.hlink{
+  font-weight: bolder;
+  font-size: 22px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+ 
+.hlink:link, .hlink:visited, .hlink:active {
+  color: #284c63;
+  background-color: transparent;
+  text-decoration: none;
+}
+
